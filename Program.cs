@@ -20,87 +20,93 @@ namespace Calculadora_en_C_
         {
             Console.WriteLine("Bienvenido a la calculadora");
             do{
-                Console.WriteLine("Elija una de las siguientes opciones: ");
-                Console.WriteLine("1. Suma");
-                Console.WriteLine("2. Resta");
-                Console.WriteLine("3. Multiplicación");
-                Console.WriteLine("4. Division");
-                Console.WriteLine("5. Encontrar el Residuo");
-                Console.WriteLine("6. Salir");
-                selec = Int32.Parse(Console.ReadLine());
-                if(selec == 6){
-                    Console.WriteLine("Hasta pronto");
-                }
-                switch(selec)
-                {
-                    case 1:
-                        Console.Clear();
-                        Console.WriteLine("Se a elegido la opcion de suma");
-                        Console.WriteLine();
-                        colecciondatos();
-                        suma = valor1 + valor2;
-                        Console.WriteLine("El valor de la suma es de: " + suma);
-                        Console.WriteLine("Presione enter para continuar");
-                        Console.ReadLine();
-                        break;
-                
-                    case 2:
-                        Console.Clear();
-                        Console.WriteLine("Se a elegido la opcion de resta");
-                        Console.WriteLine();
-                        colecciondatos();
-                        resta = valor1 - valor2;
-                        Console.WriteLine("El valor de la resta es de: " + resta);
-                        Console.WriteLine("Presione enter para continuar");
-                        Console.ReadLine();
-                        break;
-                     case 3:
-                        Console.Clear();
-                        Console.WriteLine("Se a elegido la opcion de multiplicacion");
-                        Console.WriteLine();
-                        colecciondatos();
-                        multipli = valor1 * valor2;
-                        Console.WriteLine("El valor de la resta es de: " + multipli);
-                        Console.WriteLine("Presione enter para continuar");
-                        Console.ReadLine();
-                        break;
-                     case 4:
-                        Console.Clear();
-                        Console.WriteLine("Se a elegido la opcion de encontrar el Residuo");
-                        Console.WriteLine();
-                        colecciondatos();
-                        if(valor2 == 0){
-                            while(valor2 == 0){
-                                Console.WriteLine("**ERROR**");
-                                Console.WriteLine("Porfavor elegir un numero que no sea el cero");
-                                valor2 = double.Parse(Console.ReadLine());
-                            }
-                        }
-                        division = valor1 / valor2;
-                        Console.WriteLine("El valor de la division es de: " + division);
-                        Console.WriteLine("Presione enter para continuar");
-                        Console.ReadLine();
-                        break;
-                        case 5:
+                 do{
+                    Console.WriteLine("Elija una de las siguientes opciones: ");
+                    Console.WriteLine("1. Suma");
+                    Console.WriteLine("2. Resta");
+                    Console.WriteLine("3. Multiplicación");
+                    Console.WriteLine("4. Division");
+                    Console.WriteLine("5. Encontrar el Residuo");
+                    Console.WriteLine("6. Salir");
+                    selec = Int32.Parse(Console.ReadLine());
+                    if(selec == 6){
+                        Console.WriteLine("Hasta pronto");
+                    }
+                    switch(selec)
+                    {
+                        case 1:
                             Console.Clear();
-                            Console.WriteLine("Se a elegido la opcion de encontrar el residuo");
+                            Console.WriteLine("Se a elegido la opcion de suma");
+                            Console.WriteLine();
+                            colecciondatos();
+                            suma = valor1 + valor2;
+                            Console.WriteLine("El valor de la suma es de: " + suma);
+                            Console.WriteLine("Presione enter para continuar");
+                            Console.ReadLine();
+                            break;
+                
+                        case 2:
+                            Console.Clear();
+                            Console.WriteLine("Se a elegido la opcion de resta");
+                            Console.WriteLine();
+                            colecciondatos();
+                            resta = valor1 - valor2;
+                            Console.WriteLine("El valor de la resta es de: " + resta);
+                            Console.WriteLine("Presione enter para continuar");
+                            Console.ReadLine();
+                            break;
+                        case 3:
+                            Console.Clear();
+                            Console.WriteLine("Se a elegido la opcion de multiplicacion");
+                            Console.WriteLine();
+                            colecciondatos();
+                            multipli = valor1 * valor2;
+                            Console.WriteLine("El valor de la resta es de: " + multipli);
+                            Console.WriteLine("Presione enter para continuar");
+                            Console.ReadLine();
+                            break;
+                        case 4:
+                            Console.Clear();
+                            Console.WriteLine("Se a elegido la opcion de la division");
                             Console.WriteLine();
                             colecciondatos();
                             if(valor2 == 0){
                                 while(valor2 == 0){
+                                    Console.WriteLine("**ERROR**");
                                     Console.WriteLine("Porfavor elegir un numero que no sea el cero");
                                     valor2 = double.Parse(Console.ReadLine());
                                 }
                             }
-                            residuo = valor1 % valor2;
-                            Console.WriteLine("El residuo de la division es de: " + residuo);
+                            division = valor1 / valor2;
+                            Console.WriteLine("El valor de la division es de: " + division);
                             Console.WriteLine("Presione enter para continuar");
                             Console.ReadLine();
                             break;
+                            case 5:
+                                Console.Clear();
+                                Console.WriteLine("Se a elegido la opcion de encontrar el residuo");
+                                Console.WriteLine();
+                                colecciondatos();
+                                if(valor2 == 0){
+                                    while(valor2 == 0){
+                                        Console.WriteLine("Porfavor elegir un numero que no sea el cero");
+                                        valor2 = double.Parse(Console.ReadLine());
+                                    }
+                                }
+                                residuo = valor1 % valor2;
+                                Console.WriteLine("El residuo de la division es de: " + residuo);
+                                Console.WriteLine("Presione enter para continuar");
+                                Console.ReadLine();
+                                break;
+                            }
+                    } while(selec < 6);
+                    if(selec >= 7){
+                            Console.WriteLine("Selecione una opcion valida");
+                            Console.WriteLine("Presione enter para continuar");
+                            Console.ReadLine();
                     }
-            } while(selec < 6);
-
-           
+                }while (selec > 6);
+ 
         }
           static void colecciondatos(){
               Console.WriteLine("Ingrese el primer valor");
