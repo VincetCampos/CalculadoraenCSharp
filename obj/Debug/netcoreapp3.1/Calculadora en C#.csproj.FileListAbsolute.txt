@@ -1,0 +1,13 @@
+C:\Users\JACC1\Desktop\Project C#\Calculadora en C#\bin\Debug\netcoreapp3.1\Calculadora en C#.exe
+C:\Users\JACC1\Desktop\Project C#\Calculadora en C#\bin\Debug\netcoreapp3.1\Calculadora en C#.deps.json
+C:\Users\JACC1\Desktop\Project C#\Calculadora en C#\bin\Debug\netcoreapp3.1\Calculadora en C#.runtimeconfig.json
+C:\Users\JACC1\Desktop\Project C#\Calculadora en C#\bin\Debug\netcoreapp3.1\Calculadora en C#.runtimeconfig.dev.json
+C:\Users\JACC1\Desktop\Project C#\Calculadora en C#\bin\Debug\netcoreapp3.1\Calculadora en C#.dll
+C:\Users\JACC1\Desktop\Project C#\Calculadora en C#\bin\Debug\netcoreapp3.1\Calculadora en C#.pdb
+C:\Users\JACC1\Desktop\Project C#\Calculadora en C#\obj\Debug\netcoreapp3.1\Calculadora en C#.csprojAssemblyReference.cache
+C:\Users\JACC1\Desktop\Project C#\Calculadora en C#\obj\Debug\netcoreapp3.1\Calculadora en C#.AssemblyInfoInputs.cache
+C:\Users\JACC1\Desktop\Project C#\Calculadora en C#\obj\Debug\netcoreapp3.1\Calculadora en C#.AssemblyInfo.cs
+C:\Users\JACC1\Desktop\Project C#\Calculadora en C#\obj\Debug\netcoreapp3.1\Calculadora en C#.csproj.CoreCompileInputs.cache
+C:\Users\JACC1\Desktop\Project C#\Calculadora en C#\obj\Debug\netcoreapp3.1\Calculadora en C#.dll
+C:\Users\JACC1\Desktop\Project C#\Calculadora en C#\obj\Debug\netcoreapp3.1\Calculadora en C#.pdb
+C:\Users\JACC1\Desktop\Project C#\Calculadora en C#\obj\Debug\netcoreapp3.1\Calculadora en C#.genruntimeconfig.cache
