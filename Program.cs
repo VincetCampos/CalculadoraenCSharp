@@ -18,8 +18,8 @@ namespace Calculadora_en_C_
 
         static void Main(string[] args)
         {
+            Console.WriteLine("Bienvenido a la calculadora");
             do{
-                Console.WriteLine("Bienvenido a la calculadora");
                 Console.WriteLine("Elija una de las siguientes opciones: ");
                 Console.WriteLine("1. Suma");
                 Console.WriteLine("2. Resta");
@@ -81,23 +81,23 @@ namespace Calculadora_en_C_
                         Console.WriteLine("Presione enter para continuar");
                         Console.ReadLine();
                         break;
-                    case 5:
-                        Console.Clear();
-                        Console.WriteLine("Se a elegido la opcion de encontrar el residuo");
-                        Console.WriteLine();
-                        colecciondatos();
-                        if(valor2 == 0){
-                            while(valor2 == 0){
-                                Console.WriteLine("Porfavor elegir un numero que no sea el cero");
-                                valor2 = double.Parse(Console.ReadLine());
+                        case 5:
+                            Console.Clear();
+                            Console.WriteLine("Se a elegido la opcion de encontrar el residuo");
+                            Console.WriteLine();
+                            colecciondatos();
+                            if(valor2 == 0){
+                                while(valor2 == 0){
+                                    Console.WriteLine("Porfavor elegir un numero que no sea el cero");
+                                    valor2 = double.Parse(Console.ReadLine());
+                                }
                             }
-                        }
-                        residuo = valor1 % valor2;
-                        Console.WriteLine("El residuo de la division es de: " + residuo);
-                        Console.WriteLine("Presione enter para continuar");
-                        Console.ReadLine();
-                        break;
-                }
+                            residuo = valor1 % valor2;
+                            Console.WriteLine("El residuo de la division es de: " + residuo);
+                            Console.WriteLine("Presione enter para continuar");
+                            Console.ReadLine();
+                            break;
+                    }
             } while(selec < 6);
 
            
